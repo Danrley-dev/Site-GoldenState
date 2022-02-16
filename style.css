@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor1:#1D428A;
+    --cor2:#FDB927;
+
+    --fonte-padrao: 'Roboto Condensed', sans-serif;
+    --font-principal: 'Bebas Neue', cursive;
+}
+
+
+header.principal{
+    background-color: #1D428A;
+    min-height:180px;
+    background-image: url(imagens/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+@media (max-width: 500px){
+    header.principal{background-image: url(imagens/logo.png);
+    background-size: 120px;}
+
+}
+    
+ 
+header > h1{
+    color: white;
+    font-family: var(--font-principal);
+    font-size: 3.8em;
+    text-shadow: 2px 2px 2px #00000057;
+    text-align: center;
+    padding-bottom: 40px;
+    font-variant: small-caps;
+}
+
+header > p{
+    color: white;
+    text-shadow: 2px 2px 2px #00000057;
+    font-family: var(--fonte-principal);
+    font-size: 1.3em;
+    text-align: center;
+}
+
+   
+nav{
+    padding-top: 10px;
+    background-color: var(--cor1);
+    font-size: 1.2em;
+}
+
+nav > a{
+    color: var(--cor2);
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 500;
+}
+
+nav > a:hover{
+    background-color: #FDB927;
+    color: #1D428A;
+    border-radius: 5px;
+    padding-bottom: 0px;
+    transition: .5s;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+
+main{
+    background-color: white;
+    padding: 20px;
+    min-width: 280px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+main > p{
+    font-family: var(--fonte-padrao);
+    font-weight: 600;
+    text-align: justify;
+    line-height: 2em;
+    text-indent: 30px;
+}
+
+main.img{
+    background: white url(imagens/cheaser.jpg) center center no-repeat fixed;
+    background-size: contain;
+    padding-top:200px ;
+    padding-bottom: 200px;
+}
+
+main#brabo{
+    background: white url(imagens/brabos.jpg) center center no-repeat ;
+    background-size: contain;
+    padding-top:200px ;
+    padding-bottom: 200px;
+}
+
+header#titulo{
+    background-image: url(imagens/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #1D428A;
+    font-family: var(--fonte-principal);
+    color:white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 500px){
+    header#titulo{background-image: url(imagens/logo.png);
+    background-size: 120px;}
+
+}
+
+div#elenco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+}
+
+img{
+    width: 220px;
+    padding: 10px;
+}
+
+header#titulo > h1{
+    padding-left: 100px;
+    text-shadow: 2px 2px 2px #00000086;
+}
+
+footer{
+    text-align: center;
+    background-color: #1D428A;
+    color: white;
+    font-family: var(--fonte-padrao);
+    padding: 3px;
+}
+
+#footer{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+#footer:hover{
+    background-color: #FDB927;
+    text-decoration: underline;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 1px;
+    transition: .5s;
+}
+
+.nome{
+    text-align: center;
+    font-family: var(--fonte-padrao);
+}
+
+.nome > a{
+    font-weight: bold;
+    font-family: var(--fonte-padrao);
+    text-decoration: none;
+    color: #1D428A;
+}
+
+.nome > a:hover{
+    text-decoration: underline;
+    color: #FDB927;
+}
+
+main#victorios{
+    background: white url(imagens/champions2.jpg) center center no-repeat ;
+    background-size: contain;
+    padding-top:200px ;
+    padding-bottom: 200px;
+}
+
+h1.dinasty{
+    background-color: #FDB927;
+    background-image: linear-gradient(to right, var(--cor2), white);
+    font-family: var(--font-principal);
+    font-weight: 600;
+    padding-left: 7px;
+}
+
+#eracurry{
+    background-color: var(--cor1);
+    background-image: linear-gradient(to right, var(--cor1), white);
+    font-family: var(--font-principal);
+    font-weight: 600;
+    margin-top: 10px;
+    padding-left: 7px;
+
+}
+
+main#champions{
+    background: url(imagens/champions.jpg) center center no-repeat fixed;
+    background-size: contain;
+    padding-top:200px ;
+    padding-bottom: 200px;
+}
+
+aside{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.unico{
+    background-size: contain;
+    width: 60%;
+    
+}
