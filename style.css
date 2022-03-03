@@ -27,7 +27,7 @@ header.principal{
     
 }
 
-@media (max-width: 500px){
+@media(max-width: 600px){
     header.principal{background-image: url(imagens/logo.png);
     background-size: 120px;}
 
@@ -90,7 +90,6 @@ main > p{
     font-family: var(--fonte-padrao);
     font-weight: 600;
     text-align: justify;
-    line-height: 2em;
     text-indent: 30px;
 }
 
@@ -125,6 +124,7 @@ header#titulo{
     background-size: 120px;}
 
 }
+
 
 div#elenco {
     display: flex;
